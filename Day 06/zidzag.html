@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube</title>
+    <style>
+        .cube{
+            width: 40%;
+            height: auto;
+            display: flex;
+            margin: auto;
+        }
+        .cube>div{
+            background-color: rgb(1, 85, 85);
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border-radius: 10%;
+        }
+        .new{
+           flex-grow: 1; 
+        }
+    </style>
+</head>
+<body>
+    <div class="cube">
+        <div></div>
+        <div class="new"></div>
+        <div></div>
+    </div>
+    <div class="cube">
+        <div class="new"></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="cube">
+        <div></div>
+        <div></div>
+        <div class="new"></div>
+    </div>
+</body>
+</html>

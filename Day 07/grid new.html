@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid New</title>
+    <style>
+        .main{
+            background-color: rgb(222, 216, 216);
+            display: grid;
+            grid-template-rows: 400px;
+            grid-template-columns: repeat(3,1fr);
+            font-family: sans-serif;
+            grid-gap: 30px;
+            padding: 10px;
+        }
+        .main>div{
+            border: 2px solid transparent;
+            background-color: white;
+            border-radius: 5%;
+        }
+        img{
+            border-radius: 5%;
+            width: 100%; 
+            height: 60%;
+            object-fit: fill;
+        }
+        .line{
+            background-color: rgb(222, 216, 216);
+            height: 1px;
+            width: 45%;
+        }
+        h3{
+            margin-left: 10px;
+        }
+        p{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <div class="main">
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Nostradamus_by_Cesar.jpg" alt="Nostradamus Predicted">
+            <h3>This Is What's Going To Happen In 2021 - Nostradamus Predicted It Centuries Ago</h3>
+            <div class="line"></div>
+            <p>Crafthought | Sponsored</p>
+        </div>
+        <div>
+            <img src="https://cdn.autoportal.com/img/news/3307/main/main.jpg" alt="Cars">
+            <h3>Prices of Unsold New Cars In Viskhapatnam Could Greatly Surprise You</h3>
+            <div class="line"></div>
+            <p>Unsold Cars | Search Ads | Sponsored</p>
+        </div>
+        <div>
+            <img src="https://mediacdn.99acres.com/media1/18738/9/374769512M-1659522302445.jpeg" alt="Apartments">
+            <h3>Apartments for Sale Prices in Visakhapatnam Might Surprise You</h3>
+            <div class="line"></div>
+            <p>Apartments for sale | Search Ads | Sponsored</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tab{
+            display: none;
+        }
+        .mob{
+            display: none;
+        }
+        @media only screen and (min-width: 375px) and (max-width: 768px){
+            .lap{
+                display: none;
+            }
+            .mob{
+                display: none;
+            }
+            .tab{
+                display: grid;
+            }
+        }
+        @media only screen and (min-width: 0px) and (max-width: 375px){
+            .lap{
+                display: none;
+            }
+            .mob{
+                display: grid;
+            }
+            .tab{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="lap">This is Laptop</div>
+        <div class="tab">This is Tab</div>
+        <div class="mob">This is Mobile</div>
+    </div>
+</body>
+</html>
