@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        #main{
+            width: 95%;
+            margin: auto;
+            margin-top: 20px;
+            display: grid;
+            grid-template-rows: 90px 550px;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 20px;
+            font-family: sans-serif;
+            grid-template-areas: 
+            "one one one"
+            "two three four"
+            ;
+        }
+        #main>div{
+                padding: 10px;
+                grid-gap: 20px;
+                box-shadow: rgb(38, 21, 124) 0px 3px 16px;
+            }
+        #main>div:nth-child(1){
+            text-align: center;
+            grid-area: one;
+        }
+        #main>div:nth-child(2){
+            grid-area: two;
+        }
+        #main>div:nth-child(3){
+            grid-area: three;
+        }
+        #main>div:nth-child(4){
+            grid-area: four;
+        }
+        img{
+            width: 100%;
+            height: 60%;
+            object-fit: cover; 
+        }
+        @media only screen and (min-width: 375px) and (max-width: 768px){
+            #main{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: 80px 600px 550px;
+                grid-template-areas: 
+                "one one"
+                "two three"
+                "four none"
+                ;
+                font-size: small;
+            }
+        }
+        @media only screen and (min-width: 0px) and (max-width: 375px){
+            #main{
+                width: 95%;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 80px repeat(3,600px);
+                grid-template-areas: 
+                "one"
+                "two"
+                "three"
+                "four";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div><h1>OUR BLOG</h1></div>
+        <div>
+            <img src="https://static.independent.co.uk/2022/11/27/16/TECH%20BF%20copy.jpeg?quality=75&width=1200&auto=webp" alt="">
+            <h3>Black Friday Guide:Best Sales & Discount Codes</h3>
+            <p>By Nancy Ward on July 22,2017</p>
+            <p>Duis ut velit gravida nibh bibendum commodm Suspendisse pellentesque mattis augue id euismod. Interdum et malesuda</p>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/2672/5778/articles/blog-02.jpg?v=1514488127" alt="">
+            <h3>The White Sneakers Nearly Every Fashion Girls Own</h3>
+            <p>By Nancy Ward on July 18,2017</p>
+            <p>Nullam scelerisque, lacus sed consequat laoreet,dui enim iaculis leo,eu viverra e nulla in tellus. nullam nec ornare tellus, ac fringilla lacus Ut sit ame</p>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/2672/5778/articles/blog-03.jpg?v=1514488076" alt="">
+            <h3>New York SS 2018 Street style:Annina Mislin</h3>
+            <p>By Nancy Ward on July 2,2017</p>
+            <p>Proin nec Vehicula forem, a efficitur ex. Nam vehicula nulla vel erat tincidunt,sed hendrerit ligula porttitor fusce sit amet maximus nunc</p>
+        </div>
+    </div>
+</body>
+</html>
