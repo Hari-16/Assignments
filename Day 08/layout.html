@@ -21,6 +21,7 @@
             background-color: yellow;
             grid-area: nav;
             padding-left: 10px;
+            text-align: center;
             
         }
         #main>div:nth-child(2){
@@ -49,25 +50,23 @@
             grid-template-rows: 100px 200px 200px;
             grid-template-areas: 
             "nav nav"
-            "one two"
-            "three four"
+            "one three"
+            "two four"
             ;
-            text-align: center;
             font-size: x-large;
             }
         }
         @media only screen and (min-width: 0px) and (max-width: 375px){
         #main{
             grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: 80px 200px 200px 200px 200px;
+            grid-template-rows: 100px repeat(4,150px);
             grid-template-areas: 
             "nav"
             "one"
+            "four"
             "two"
             "three"
-            "four"
             ;
-            text-align: center;
             font-size: x-large;
             }
         }
